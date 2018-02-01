@@ -30,7 +30,6 @@ public class NutritionFacts {
       fat = val;
       return this;
     }
-
     public Builder sodium(int val) {
       sodium = val;
       return this;
@@ -59,6 +58,6 @@ public class NutritionFacts {
     public static void main(String[] args) {
       NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8)
               .calories(100).sodium(35).carbohydrate(27).fat(10).build();
-      System.out.printf("Nutrition facts: %d", cocaCola.servings);
+      System.out.printf("Nutrition fatter: %d", cocaCola.fat);
     }
 }
